@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    background-color: #e8e7c4;
+}
+
+@font-face {
+    font-family: idroid;
+    src: url(../fontes/idroid.otf);
+}
+:root{
+    --cor1:#71D88C;
+    --cor2:#56A56C;
+    --cor3:#193c21c9;
+
+    --font1:arial,helvetica,sans-serif;
+    --font2:idroid;
+    --font3:bebas neue,cursive
+}
+.cabecalho{
+    background-image: linear-gradient(var(--cor2),var(--cor3))
+}
+.topo{
+    width: 100%;
+    height: 26%;
+    max-height: 150px;
+    text-shadow: 2px 2px 1px rgb(0,0,0, 0.6);
+}
+nav{
+    width: 100%;
+    height: 4%;
+    max-height: 35px;
+}
+.topo h1{
+    font: 3em var(--font3);
+    color:white;
+    text-align: center;
+    padding:2%;
+}
+.topo p{
+    font:bold 1em var(--font1);
+    color:white;
+    text-align: center;
+    padding:0 2%;
+}
+.text p a{
+    background-color: #71D88C;
+    text-decoration: none;
+    font:bold 0.9em arial;
+    color: #193C21;
+    padding: 2px 5px;
+}
+.text p a::after{
+    content: '\1F517';
+}
+li{
+    display: inline-block;
+    text-decoration: none;
+    margin:3px 1%;
+}
+.list li a{
+    text-decoration: none;
+    color:var(--cor1);
+    font:bold 1em var(--font1);
+    display: inline-block;
+    width: 140%;
+    text-align: center;
+    border-radius: 3px;
+}
+.list a:hover{
+    background-color:var(--cor1);
+    color:var(--cor3)
+}/* header */
+main{
+    width: 1200px;
+    height:auto;
+    background-color: white;
+    margin: auto;
+    padding: 2%;
+    border-radius: 0 0px 10px 10px;
+}
+@media screen and (max-width:1220px){
+    main{
+        width: 100%;
+    }
+}
+.text h1{
+    font:2em var(--font2);
+    color:#407750;  
+}
+span{
+    font: bold var(--font1);
+    color:#294d33;
+    font-weight: bold;
+}
+.text p{
+    font-family:var(--font1);
+    margin-top: 2%;
+    text-indent: 3%;
+    text-align: justify;
+    line-height: 25px;
+}
+.text .subtitule{
+    width: 90%;
+    font:1.5em var(--font2);
+    color:#407750;
+    background-image: linear-gradient( to right, #99deb1,white,transparent);
+}
+.image{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+.image img{
+    width: 100%;
+    margin:2% 0;
+}/*troca de imagem*/
+.image .image-one{
+    width: 50%;
+}
+.video{
+    position:relative;
+    width: 90%;
+    padding-top:50.70%;
+    margin: auto;
+}
+iframe{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.tabela{
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    margin-top: 5%;
+    background-color:#73e092;
+    border-top:50px solid;
+    border-color:#294d33 ;
+    border-radius: 20px;
+}
+.tabela p{
+    font-family:var(--font1);
+    text-indent: 3%;
+    text-align: justify;
+    line-height: 25px;
+    margin:0 2%
+}
+.tabela .top{
+    color:white;
+    font: bold 1.2em arial;
+    margin:0;
+    position: relative;
+    bottom:30px
+}
+.tabela li{
+    display: block;
+}
+.check1,.check2{
+    width: 50%;
+    height: 31%;
+    display: block;
+    float: left;
+    padding-bottom: 4%;
+}
+.text:last-of-type{
+    clear: both;
+}
+.clear{
+    clear: both;
+}/*main*/
+.footer{
+    width: 100%;
+    height: 3%;
+    margin-top: 5%;
+    background-color: #193C21;
+    text-align: center;
+}
+.footer p{
+    font: 0.8em var(--font1);
+    color: white;
+}
+@media screen and (max-width:660px) {
+    .text h1{
+        font-size: 1.4em;
+    }
+    .tabela{
+        max-height: 600px;
+    }
+    .list a{
+        width: 120%;
+    }
+}
+@media screen and (max-width:455px) {
+    .topo h1{
+        font-size: 2.2em;
+        height: 60%;
+    }
+    .topo{
+        height: 30%;
+    }
+    nav{
+        height: 5%;
+    }
+    .topo p{
+        font-size: 0.9em;
+    }
+    .list li a{
+        font-size: 0.9em;
+    }
+    .text .subtitule{
+        font-size: 0.9em;
+    }
+    .tabela{
+        height: 120%;
+        max-height: 600px;
+    }
+    .check1,.check2{
+        height: 37%;
+    }
+    .footer{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width:340px) {
+    .list li a{
+        font-size: 0.8em;
+    }
+    .tabela{
+        height: 120%;
+        max-height: 550px;
+        font-size: 0.8em;
+    }
+}
+
+
+
+
+
+
+
